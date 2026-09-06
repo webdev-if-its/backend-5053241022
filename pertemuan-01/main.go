@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"runtime"
 )
 
 // TODO(Level 4): ganti dengan NRP kalian sendiri, contoh: "5025201012"
@@ -26,7 +27,9 @@ func Sapa(nama string) string {
 // TODO(Level 5): gabungkan Nama, NRP, dan hasil runtime.Version() jadi satu
 // string siap cetak (lihat contoh format di SOAL.md).
 func CetakInfo(nama string) string {
-	return "TODO"
+	return "Nama: " + nama + "\n" +
+		"NRP: " + NRP + "\n" +
+		runtime.Version() + "\n"
 }
 
 func main() {
