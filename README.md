@@ -40,7 +40,7 @@ contoh situasinya misal ada anggota tim yang commit satu modul fitur aplikasi te
 jika ada anggota tim yang menjalankan program ini dengan versi go berbeda, tidak akan ada masalah nyata yang terjadi. perbedaan versi go ini akan menjadi masalah ketika di tes program ada yang mengecek output dari runtime.Version() yang harus sama persis angka versinya. jika kasusnya seperti itu, maka tesnya bisa gagal di komputer anggota tim lain meskipun kodenya tidak salah.  
 
 ## Catatan Merge Conflict
-(tulis di sini)
+merge conflict terjadi di baris return yang ada di dalam CetakInfo. bentrok terjadi karena ada branch yang mengubah baris yang sama. hasil akhirnya, kedua perubahan yang ada di dua branch ini digabung jadi satu. 
 
 ## Kenapa .gitignore Penting
 (tulis di sini)
