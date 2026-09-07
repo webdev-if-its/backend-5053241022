@@ -29,7 +29,8 @@ func Sapa(nama string) string {
 func CetakInfo(nama string) string {
 	return "Nama: " + nama + "\n" +
 		"NRP: " + NRP + "\n" +
-		runtime.Version() + "\n"
+		runtime.Version() + "\n" +
+		Sapa(nama) + "\n"
 }
 
 func main() {
