@@ -43,7 +43,7 @@ jika ada anggota tim yang menjalankan program ini dengan versi go berbeda, tidak
 merge conflict terjadi di baris return yang ada di dalam CetakInfo. bentrok terjadi karena ada branch yang mengubah baris yang sama. hasil akhirnya, kedua perubahan yang ada di dua branch ini digabung jadi satu. 
 
 ## Kenapa .gitignore Penting
-(tulis di sini)
+.gitignore perlu untuk mencegah file penting yang harusnya pribadi malah tercommit ke repo online. misalkan file .exe ikut tercommit. setiap anggota tim yang build ulang kodenya di komputer, file buildnya bisa saja jadi bentrok dengan file build anggota lain yang ada di riwayat git nya. 
 
 ## Refleksi
-(tulis di sini)
+yang paling membingungkan adalah soal nomor 8 yang menyelesaikan merge conflict. ketika ada conflict yang muncul bingung dan takut salah edit sehingga kode jadi rusak. karena di soal dijelaskan harus tidak ada sisa conflict marker, jadi saya hapus saja semua bagian kode yg conflict dan tulis ulang lalu menggabungkan perubahan yang terjadi.
