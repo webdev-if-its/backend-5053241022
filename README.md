@@ -37,7 +37,7 @@ git commit adalah ketika programmer menyimpan perubahan yang ada di kode di kont
 contoh situasinya misal ada anggota tim yang commit satu modul fitur aplikasi tetapi lupa untuk push kodenya. akibatnya, anggota tim lain yang pull dari github tidak melihat adanya pembaruan dari modul fitur tersebut dan bisa saja mengerjakannya sendiri dari awal. ini mengakibatkan adanya pemborosan waktu karena tim jadi mengerjakan ulang modul yang sebenarnya sudah dikerjakan sebelumnya.
 
 ## Reproducibility
-(tulis di sini)
+jika ada anggota tim yang menjalankan program ini dengan versi go berbeda, tidak akan ada masalah nyata yang terjadi. perbedaan versi go ini akan menjadi masalah ketika di tes program ada yang mengecek output dari runtime.Version() yang harus sama persis angka versinya. jika kasusnya seperti itu, maka tesnya bisa gagal di komputer anggota tim lain meskipun kodenya tidak salah.  
 
 ## Catatan Merge Conflict
 (tulis di sini)
