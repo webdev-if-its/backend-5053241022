@@ -34,7 +34,10 @@ func HitungDiskon(total float64) float64 {
 }
 
 func TotalSetelahDiskon(qty []int, hargaSatuan []float64, tarifPajak float64) float64 {
-	panic("belum diimplementasikan")
+	subtotal := HitungTotalPesanan(qty, hargaSatuan)
+	subtotal -= HitungDiskon(subtotal)
+	total := TerapkanPajak(subtotal, tarifPajak)
+	return total
 }
 
 func ValidasiPesanan(qty []int, hargaSatuan []float64) (bool, string) {
